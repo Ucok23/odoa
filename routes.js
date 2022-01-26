@@ -7,7 +7,7 @@ const SurahRandomizer = require('./surahRandomizer')
 const router = Router()
 
 // root router
-router.get('/', caching, SurahRandomizer.getRandomAyahAllSurah)
+router.get('/', SurahRandomizer.getRandomAyahAllSurah)
 
 
 // fallback router
