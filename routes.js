@@ -10,7 +10,7 @@ const router = Router()
 // root router
 router.get('/', SurahRandomizer.getRandomAyahAllSurah)
 router.get('/jumlah-ayah', JumlahAyah.quiz)
-
+router.get('/juz/:juz', SurahRandomizer.getJuz)
 
 
 // fallback router
