@@ -29,7 +29,7 @@ class SurahRandomizer {
         return res.status(200).send({
             code: 200,
             status: 'OK.',
-            message: `Success fetching ayah fro juz "${juz}".`,
+            message: `Success fetching ayah from juz "${juz}".`,
             data
         })
 
