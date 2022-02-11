@@ -9,7 +9,7 @@ class SurahRandomizer {
             code: 200,
             status: 'OK',
             message: 'Success getting random ayah from all surah',
-            data: data
+            resources: data
         })
     }
 
@@ -22,15 +22,15 @@ class SurahRandomizer {
                 code: 404,
                 status: 'Not Found.',
                 message: `Juz "${juz}" must between 1 to 30.`,
-                data: {}
+                resources: {}
             })
         }
 
         return res.status(200).send({
             code: 200,
             status: 'OK.',
-            message: `Success fetching ayah fro juz "${juz}".`,
-            data
+            message: `Success fetching ayah from juz "${juz}".`,
+            resources: data
         })
 
     }
